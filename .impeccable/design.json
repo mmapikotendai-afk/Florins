@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T00:00:00Z",
+  "title": "Design System: FLORINS",
+  "extensions": {
+    "typographyMeta": {
+      "display": {
+        "displayName": "Cormorant Garamond",
+        "purpose": "Editorial headings; hero uses clamp(3.25rem, 5.3vw, 6rem), clamp(3rem, 5.6vw, 4rem) below 1280px and clamp(3.25rem, 12vw, 5rem) below 768px. Body and controls use Manrope."
+      },
+      "supporting": {
+        "displayName": "Supporting copy",
+        "purpose": "13px captions, footer copy, text links, catalogue filters and specifications; 14px is the small prose role."
+      },
+      "label": {
+        "displayName": "Navigation and metadata",
+        "purpose": "12px navigation, captions and uppercase homepage action labels."
+      },
+      "appointment-compact": {
+        "displayName": "Compact appointment action",
+        "purpose": "11px mobile masthead action, with a 44px minimum target."
+      },
+      "wordmark": {
+        "displayName": "Masthead wordmark",
+        "purpose": "1.8rem Cormorant with 0.08em tracking; 1.375rem below 768px. Hero identity is 1.5rem and footer wordmark 2rem."
+      },
+      "small": {
+        "displayName": "Small prose",
+        "purpose": "Established 14px supporting prose, including catalogue descriptions and sample-notice heading."
+      },
+      "collection-title": {
+        "displayName": "Collection page title",
+        "purpose": "Individual collection heading: clamp(3rem, 5.3vw, 5rem), line-height 1.03."
+      },
+      "detail-title": {
+        "displayName": "Design detail title",
+        "purpose": "Design detail heading: clamp(2.5rem, 4vw, 4.5rem), line-height 1.03."
+      },
+      "editorial-title": {
+        "displayName": "Bespoke and Atelier hero",
+        "purpose": "Cormorant upright/italic: clamp(3.5rem, 5.4vw, 6rem); clamp(3rem, 5.8vw, 4.5rem) below 1024px and clamp(3.5rem, 12vw, 5rem) below 768px."
+      },
+      "booking-intro": {
+        "displayName": "Appointment introduction",
+        "purpose": "3.5rem Cormorant, 3rem below 768px."
+      },
+      "booking-intro-mobile": {
+        "displayName": "Mobile appointment introduction",
+        "purpose": "3rem Cormorant below 768px."
+      },
+      "booking-step": {
+        "displayName": "Appointment step title",
+        "purpose": "2.5rem Cormorant, line-height 1.08; 2rem below 768px."
+      },
+      "booking-step-mobile": {
+        "displayName": "Mobile appointment step",
+        "purpose": "2rem Cormorant below 768px, line-height 1.08."
+      },
+      "booking-summary": {
+        "displayName": "Selection summary",
+        "purpose": "1.75rem Cormorant."
+      },
+      "booking-reference": {
+        "displayName": "Demonstration reference",
+        "purpose": "1.25rem weight-500 Manrope with tabular numerals."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "fast",
+        "value": "160ms",
+        "purpose": "Interactive feedback."
+      },
+      {
+        "name": "standard",
+        "value": "280ms",
+        "purpose": "Standard transitions."
+      },
+      {
+        "name": "reveal",
+        "value": "600ms",
+        "purpose": "One-time 8px hero-copy and 16px selected-creation vertical entrances; content remains visible before hydration. Reduced motion disables entrances."
+      },
+      {
+        "name": "editorial",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Restrained deceleration."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "40rem"
+      },
+      {
+        "name": "md",
+        "value": "48rem"
+      },
+      {
+        "name": "lg",
+        "value": "64rem"
+      },
+      {
+        "name": "xl",
+        "value": "80rem"
+      },
+      {
+        "name": "2xl",
+        "value": "96rem"
+      },
+      {
+        "name": "compact-navigation",
+        "value": "1279px"
+      },
+      {
+        "name": "homepage-stack",
+        "value": "767px"
+      },
+      {
+        "name": "compact-masthead",
+        "value": "359px"
+      },
+      {
+        "name": "wide-hero-alignment",
+        "value": "1600px"
+      },
+      {
+        "name": "catalogue-two-column",
+        "value": "1023px"
+      },
+      {
+        "name": "catalogue-single-column",
+        "value": "599px"
+      },
+      {
+        "name": "enquiry-single-column",
+        "value": "479px"
+      }
+    ],
+    "catalogueBehavior": {
+      "gallery": "Native dialog, contained fitting photographs at 100%, zoom 100-300% in 50% steps, reset, scroll, genuine alternate photographs, arrow keys, Escape, focus restoration and explicit loading/error status. Zoom begins centered and preserves the current view center after manual panning; opening, reset and photograph changes restore the centered 100% view.",
+      "dataBoundary": "Editable fixture configuration and asynchronous typed DTO repository; future PostgreSQL adapter only. No database connection, migration, admin UI or online payment."
+    },
+    "editorialBehavior": {
+      "enquiry": "React Hook Form and Zod local draft: required full name/email/phone/occasion/description; optional preferred date/event date/references/notes. Native dates validate against Africa/Harare and preferred date cannot follow event. Linked errors, alert summary, focused draft heading, clipboard fallback and invalidated draft after edits. No submission, booking, browser storage or personal values in URLs or application network requests.",
+      "references": "Maximum three JPEG/PNG/WebP local previews, nonempty and <=5 MiB each, <=20 megapixels and <=8192px per edge. Signature and browser decode checks; atomic rejection, checking/error states, removal and object URL cleanup. No upload.",
+      "handoff": "Confirmed business WhatsApp https://wa.me/263771640916 and calls tel:+263771640916; display +263 771 640 916. WhatsApp URL contains no prefilled personal text. Visitor copies, pastes and manually sends; reference originals shared separately. Instagram retained as social. The draft-ready WhatsApp action opens a new tab, announces that behavior and uses noopener noreferrer so the local draft remains available. Footer contacts stack vertically, start-aligned, with a 4px gap.",
+      "truth": "Seven-step process is proposed and unverified. No timing, fitting-count or cost commitments. Three clearly marked studio-gallery slots in source configuration await approved actual studio images; garment photos depict creations, not interiors."
+    },
+    "bookingBehavior": {
+      "flow": "Service, Date, Time, Your details, Review, Submit; demo notice in all phases. Native radios and keyboard React DayPicker, latest-value step validation on Continue, heading focus, editable review and retained customer details. Service clears date/time; date clears time.",
+      "fixtures": "Six configurable services with sample durations 30/30/45/60/30/90 minutes. Rolling 56 days, example 09:00-16:00 window, 30-minute starts, blocked dates/intervals. All mock; no real hours claimed. Africa/Harare UTC+02:00 dates and slots.",
+      "calendar": "Square monochrome controls: available bordered, selected black/white, unavailable struck-through on surface, past italic; legend and accessible labels. Disabled time choices remain visible.",
+      "submission": "RHF/Zod, optional event date and notes, current mock selection revalidation, explicit acknowledgement and submit lock. Instance-local Promise map reuses concurrent idempotency keys. No inventory mutation, POST, browser persistence, personal values in URLs or notifications.",
+      "confirmation": "DEMO reference and demo-only/not-reserved status with customer, service, date, time and real location. Component-memory only; lost on reload, navigation or restart. Direct WhatsApp contact for real visits.",
+      "future": "Typed gateway admits demo mode/status only. Stage 6 must add authoritative server transport, verified configuration, production states, server validation, PostgreSQL transaction/conflict enforcement and request/payload-bound idempotency. No admin UI, schema change or migration in Stage 5."
+    },
+    "navigationBehavior": {
+      "layout": "Fixed white 112px desktop masthead at >=1280px, 80px compact below. Centered supplied logo, three main links either side and right booking CTA. Matching content offset; scroll padding and target margins use header height +24px.",
+      "routes": "Shared mainNavigation: /, /collections, /bespoke, /atelier, /about, /contact. Pathname aria-current page state includes nested collections; /appointments marks booking action. No IntersectionObserver tracking.",
+      "interaction": "Compact menu first-link focus, keyboard containment, Escape/focus restoration. onNavigate closes menu, releases body scrolling and scrolls top, including repeated header destinations. RouteStart scrolls changed paths top unless contextual hash exists. Footer Back to top targets local #main-content.",
+      "truth": "About/Contact reuse approved garment photos, brand facts and confirmed WhatsApp/calling/Instagram/locality. No stock, studio interiors, street address, hours or extra business claims. Appointments remain demo-only."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary actions, minimum height 48px.",
+      "html": "<button class=\"ds-primary\">View collection</button>",
+      "css": ".ds-primary{min-height:48px;padding:12px 24px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font:500 14px var(--font-body);transition:background var(--duration-fast)}.ds-primary:hover{background:var(--charcoal)}.ds-primary:focus-visible{outline:2px solid var(--ink);outline-offset:4px}"
+    },
+    {
+      "name": "Outline button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary actions with a defined border.",
+      "html": "<button class=\"ds-outline\">Visit Instagram</button>",
+      "css": ".ds-outline{min-height:48px;padding:12px 24px;border:1px solid var(--ink);background:var(--paper);color:var(--ink);font:500 14px var(--font-body);transition:color var(--duration-fast),background var(--duration-fast)}.ds-outline:hover{background:var(--ink);color:var(--paper)}.ds-outline:focus-visible{outline:2px solid var(--ink);outline-offset:4px}"
+    },
+    {
+      "name": "Text button",
+      "kind": "button",
+      "description": "Low emphasis actions with an underline on hover.",
+      "html": "<button class=\"ds-ghost\">Read more</button>",
+      "css": ".ds-ghost{min-height:48px;padding:12px 24px;border:1px solid transparent;background:var(--paper);color:var(--ink);font:500 14px var(--font-body);text-underline-offset:4px}.ds-ghost:hover{text-decoration:underline}.ds-ghost:focus-visible{outline:2px solid var(--ink);outline-offset:4px}"
+    },
+    {
+      "name": "Text input",
+      "kind": "input",
+      "description": "Square control with a high contrast boundary and visible label.",
+      "html": "<label class=\"ds-label\" for=\"ds-name\">Name</label><input class=\"ds-input\" id=\"ds-name\" autocomplete=\"name\" />",
+      "css": ".ds-label{display:block;font:400 14px var(--font-body);margin-bottom:8px}.ds-input{min-height:48px;padding:12px 16px;border:1px solid var(--charcoal);border-radius:0;background:var(--paper);color:var(--ink);font:400 16px var(--font-body);caret-color:var(--ink)}.ds-input:focus-visible{outline:2px solid var(--ink);outline-offset:4px}"
+    },
+    {
+      "name": "Navigation link",
+      "kind": "nav",
+      "description": "Understated text navigation with a 48px target.",
+      "html": "<nav aria-label=\"Preview navigation\"><a class=\"ds-link\" href=\"https://www.instagram.com/florins.zw/\">Instagram</a></nav>",
+      "css": ".ds-link{display:inline-flex;min-height:48px;align-items:center;color:var(--ink);font:400 14px var(--font-body);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px}.ds-link:hover{text-decoration-color:currentColor}.ds-link:focus-visible{outline:2px solid var(--ink);outline-offset:4px}"
+    },
+    {
+      "name": "Contained fashion film",
+      "kind": "custom",
+      "description": "16:9 desktop and 9:16 mobile film, object-fit contain. One responsive source is selected after hydration. Reduced motion and data saving receive the matching poster without video requests; playback errors retain a poster. Supplied blurred desktop side panels are preserved.",
+      "html": "<div class=\"ds-film\"><video poster=\"/images/florins-hero-poster.jpg\" preload=\"none\" muted playsinline aria-label=\"FLORINS fashion film\"></video></div>",
+      "css": ".ds-film{width:100%;aspect-ratio:16/9;background:var(--paper)}.ds-film video{display:block;width:100%;height:100%;object-fit:contain}@media(max-width:767px){.ds-film{aspect-ratio:9/16}}"
+    },
+    {
+      "name": "Shared navigation",
+      "kind": "nav",
+      "description": "Fixed white masthead with centered desktop logo and three main links either side at >=1280px; compact brand/booking/menu below. Six real page routes, pathname active states and 112px/80px content offsets. Contextual hashes preserved; header navigation starts at top. Booking remains demo-only.",
+      "html": "<nav aria-label=\"Main navigation\"><a class=\"ds-section-link\" href=\"/collections\" aria-current=\"page\">Collections</a></nav>",
+      "css": ".ds-section-link{display:inline-flex;align-items:center;min-height:48px;color:var(--ink);font:400 12px var(--font-body);text-decoration:none;border-bottom:1px solid transparent}.ds-section-link:hover,.ds-section-link[aria-current]{border-bottom-color:currentColor}.ds-section-link:focus-visible{outline:2px solid var(--ink);outline-offset:4px}"
+    },
+    {
+      "name": "Catalogue category filter",
+      "kind": "custom",
+      "description": "Reloadable GET category filter with clear and unknown-category recovery states. Options come from editable source configuration; no admin UI.",
+      "html": "<form class=\"ds-filter\" method=\"get\" action=\"/collections#designs\"><label for=\"ds-category\">Collection</label><select id=\"ds-category\" name=\"category\"><option value=\"\">All collections</option><option value=\"gowns\">Gowns</option></select><button>Apply filter</button></form>",
+      "css": ".ds-filter{font:400 13px var(--font-body);color:var(--ink)}.ds-filter label{display:block;margin-bottom:8px}.ds-filter select{min-height:48px;padding:10px 36px 10px 12px;border:1px solid var(--charcoal);border-radius:0;background:var(--paper);color:var(--ink);font:inherit}.ds-filter button{min-height:48px;margin-left:16px;padding:12px 24px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font:inherit}.ds-filter button:hover{background:var(--charcoal)}.ds-filter select:focus-visible,.ds-filter button:focus-visible{outline:2px solid var(--ink);outline-offset:4px}"
+    },
+    {
+      "name": "Catalogue sample notice",
+      "kind": "custom",
+      "description": "Approved original-colour photographs with illustrative names, category assignments, sizes, fabric and making status. All fixture prices are null.",
+      "html": "<aside class=\"ds-sample\" aria-label=\"Sample catalogue information\"><strong>Sample catalogue</strong><p>Approved FLORINS photographs with illustrative names, categories and design details. This development preview does not confirm products, pricing or availability.</p></aside>",
+      "css": ".ds-sample{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:24px;background:var(--surface);color:var(--ink);border-block:1px solid var(--line);font-family:var(--font-body)}.ds-sample strong{font-size:14px;font-weight:500}.ds-sample p{font-size:13px;max-width:78ch}@media(max-width:767px){.ds-sample{grid-template-columns:1fr;gap:8px;padding:20px}}"
+    },
+    {
+      "name": "Enquiry field error",
+      "kind": "input",
+      "description": "Square labelled field with linked explanatory text and monochrome invalid state.",
+      "html": "<label class=\"ds-enquiry-label\" for=\"ds-description\">Design description</label><textarea class=\"ds-enquiry-area\" id=\"ds-description\" aria-invalid=\"true\" aria-describedby=\"ds-description-error\" rows=\"4\"></textarea><p class=\"ds-enquiry-error\" id=\"ds-description-error\">Describe your design in at least 20 characters.</p>",
+      "css": ".ds-enquiry-label{display:block;margin-bottom:8px;color:var(--ink);font:500 14px var(--font-body)}.ds-enquiry-area{display:block;width:100%;border:2px solid var(--charcoal);border-radius:0;padding:12px 16px;background:var(--paper);color:var(--ink);font:400 16px var(--font-body);resize:vertical}.ds-enquiry-area:focus-visible{outline:2px solid var(--ink);outline-offset:4px}.ds-enquiry-error{margin-top:8px;color:var(--ink);font:500 12px var(--font-body)}"
+    },
+    {
+      "name": "Studio gallery placeholder",
+      "kind": "custom",
+      "description": "Explicit missing-asset slot; replace only with approved photography of the actual studio.",
+      "html": "<div class=\"ds-studio-slot\"><span>Inside the studio</span><p>Approved studio photograph to follow</p></div>",
+      "css": ".ds-studio-slot{display:flex;flex-direction:column;justify-content:center;align-items:center;aspect-ratio:3/4;padding:24px;text-align:center;background:var(--surface);color:var(--ink);border:1px solid var(--line)}.ds-studio-slot span{font:400 var(--type-subheading) var(--font-editorial)}.ds-studio-slot p{font:400 12px var(--font-body);max-width:22ch;margin-top:16px}@media(max-width:767px){.ds-studio-slot{aspect-ratio:4/3}}"
+    },
+    {
+      "name": "Appointment service option",
+      "kind": "custom",
+      "description": "Native radio with a square selected boundary and explicit sample duration. Services are editable fixtures, not confirmed business policy.",
+      "html": "<label class=\"ds-booking-service\"><input type=\"radio\" name=\"ds-service\" checked /><span><strong>Fashion Consultation</strong><small>30 min - sample duration</small></span></label>",
+      "css": ".ds-booking-service{display:flex;gap:12px;align-items:start;padding:20px 16px;border:1px solid var(--ink);outline:1px solid var(--ink);background:var(--surface);color:var(--ink);cursor:pointer}.ds-booking-service input{width:18px;height:18px;accent-color:var(--ink);margin-top:4px}.ds-booking-service strong{display:block;font:500 14px var(--font-body)}.ds-booking-service small{display:block;margin-top:16px;font:400 12px var(--font-body)}.ds-booking-service:hover{border-color:var(--charcoal)}.ds-booking-service:focus-within{outline:2px solid var(--ink);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The garment gets the colour.",
+    "overview": "An editorial identity in black and white, framing supplied original-colour fashion photography and film. The approved Stage 2 homepage extends the Stage 1 typography and spacing foundation with asymmetric garment imagery, a quiet masthead and alternating light and dark editorial sections. The user's approved composition and supplied media pin this visual world. Stage 3 extends the established system into the directly implemented sample catalogue, with staggered collection photographs, borderless design grids, GET filtering and a contained native-dialog gallery. Stage 4 continues the established code-led world with Bespoke and Atelier editorial storytelling and a local enquiry-draft flow; proposed workflow and unavailable studio imagery remain explicit. Stage 5 adds a six-step Operate-mode appointment demonstration with fixed task type, monochrome calendar states and persistent mock-only disclosure, continuing the existing code-led feature extension. The authorized navigation refinement centers the desktop logo, fixes the masthead with matching content offset and adds truthful About and Contact pages.",
+    "keyCharacteristics": [
+      "Expressive serif headings and quiet, legible navigation.",
+      "Asymmetric composition with generous negative space.",
+      "Flat surfaces, square controls and fine rules."
+    ],
+    "rules": [
+      {
+        "name": "The Original Colour Rule",
+        "body": "Do not tint, desaturate, or otherwise recolour garment photography.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Keep the supplied monochrome palette and original garment colours.",
+      "Let supplied photographs, film and garment detail carry storytelling.",
+      "Preserve responsive typography, semantic order and visible focus.",
+      "Distinguish approved photographs from sample metadata and preserve full silhouettes.",
+      "Keep 14px prose, 13px support and 12px metadata roles legible with visible keyboard focus.",
+      "Label the seven-step workflow as proposed until studio confirmation.",
+      "Caption garment photographs truthfully and keep all three missing studio-image slots explicit.",
+      "Explain that copying a local draft and manually sending through WhatsApp is required; preparation does not submit or book.",
+      "Keep mock durations, availability and DEMO confirmation clearly separate from real studio policy or reservations."
+    ],
+    "donts": [
+      "Do not present sample names, categories, fabric, sizes or making states as confirmed inventory; all fixture prices remain null.",
+      "Do not add gradients, arbitrary accents, decorative shadows or raised commerce cards.",
+      "Limit scope to Stage 5 and the authorized navigation/About/Contact refinement; no administration UI, database migration, online payment or production reservation workflow. Keep noindex."
+    ]
+  }
+}

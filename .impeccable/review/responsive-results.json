@@ -1,0 +1,271 @@
+[
+  {
+    "width": 320,
+    "scrollWidth": 320,
+    "source": "/videos/florins-hero-mobile.mp4",
+    "fit": "contain",
+    "broken": [],
+    "badTargets": [],
+    "requests": [
+      "http://127.0.0.1:3000/videos/florins-hero-mobile.mp4"
+    ],
+    "viewportEvents": [
+      {
+        "width": 320,
+        "mobile": true,
+        "time": 169.5
+      }
+    ],
+    "captureRequests": [
+      "http://127.0.0.1:3000/videos/florins-hero-mobile.mp4"
+    ],
+    "captureViewportEvents": [
+      {
+        "width": 320,
+        "mobile": true,
+        "time": 169.5
+      },
+      {
+        "width": 320,
+        "mobile": true,
+        "time": 4326.5
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 375,
+    "scrollWidth": 375,
+    "source": "/videos/florins-hero-mobile.mp4",
+    "fit": "contain",
+    "broken": [],
+    "badTargets": [],
+    "requests": [
+      "http://127.0.0.1:3000/videos/florins-hero-mobile.mp4"
+    ],
+    "viewportEvents": [
+      {
+        "width": 375,
+        "mobile": true,
+        "time": 32.89999999990687
+      }
+    ],
+    "captureRequests": [
+      "http://127.0.0.1:3000/videos/florins-hero-mobile.mp4"
+    ],
+    "captureViewportEvents": [
+      {
+        "width": 375,
+        "mobile": true,
+        "time": 32.89999999990687
+      },
+      {
+        "width": 375,
+        "mobile": true,
+        "time": 3919
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 430,
+    "scrollWidth": 430,
+    "source": "/videos/florins-hero-mobile.mp4",
+    "fit": "contain",
+    "broken": [],
+    "badTargets": [],
+    "requests": [
+      "http://127.0.0.1:3000/videos/florins-hero-mobile.mp4"
+    ],
+    "viewportEvents": [
+      {
+        "width": 430,
+        "mobile": true,
+        "time": 30.800000000279397
+      }
+    ],
+    "captureRequests": [
+      "http://127.0.0.1:3000/videos/florins-hero-mobile.mp4"
+    ],
+    "captureViewportEvents": [
+      {
+        "width": 430,
+        "mobile": true,
+        "time": 30.800000000279397
+      },
+      {
+        "width": 430,
+        "mobile": true,
+        "time": 6355.600000000093
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "scrollWidth": 768,
+    "source": "/videos/florins-hero-desktop.mp4",
+    "fit": "contain",
+    "broken": [],
+    "badTargets": [],
+    "requests": [
+      "http://127.0.0.1:3000/videos/florins-hero-desktop.mp4"
+    ],
+    "viewportEvents": [
+      {
+        "width": 768,
+        "mobile": false,
+        "time": 36.60000000009313
+      }
+    ],
+    "captureRequests": [
+      "http://127.0.0.1:3000/videos/florins-hero-desktop.mp4"
+    ],
+    "captureViewportEvents": [
+      {
+        "width": 768,
+        "mobile": false,
+        "time": 36.60000000009313
+      },
+      {
+        "width": 768,
+        "mobile": false,
+        "time": 4174.700000000186
+      },
+      {
+        "width": 768,
+        "mobile": false,
+        "time": 4177.399999999907
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "scrollWidth": 1024,
+    "source": "/videos/florins-hero-desktop.mp4",
+    "fit": "contain",
+    "broken": [],
+    "badTargets": [],
+    "requests": [
+      "http://127.0.0.1:3000/videos/florins-hero-desktop.mp4"
+    ],
+    "viewportEvents": [
+      {
+        "width": 1024,
+        "mobile": false,
+        "time": 35.89999999990687
+      }
+    ],
+    "captureRequests": [
+      "http://127.0.0.1:3000/videos/florins-hero-desktop.mp4"
+    ],
+    "captureViewportEvents": [
+      {
+        "width": 1024,
+        "mobile": false,
+        "time": 35.89999999990687
+      },
+      {
+        "width": 1024,
+        "mobile": false,
+        "time": 4564.5
+      },
+      {
+        "width": 1024,
+        "mobile": false,
+        "time": 4565.699999999721
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "scrollWidth": 1440,
+    "source": "/videos/florins-hero-desktop.mp4",
+    "fit": "contain",
+    "broken": [],
+    "badTargets": [],
+    "requests": [
+      "http://127.0.0.1:3000/videos/florins-hero-desktop.mp4"
+    ],
+    "viewportEvents": [
+      {
+        "width": 1440,
+        "mobile": false,
+        "time": 31
+      }
+    ],
+    "captureRequests": [
+      "http://127.0.0.1:3000/videos/florins-hero-desktop.mp4",
+      "http://127.0.0.1:3000/videos/florins-hero-mobile.mp4"
+    ],
+    "captureViewportEvents": [
+      {
+        "width": 1440,
+        "mobile": false,
+        "time": 31
+      },
+      {
+        "width": 1,
+        "mobile": true,
+        "time": 5763.299999999814
+      },
+      {
+        "width": 1,
+        "mobile": true,
+        "time": 5764.5
+      },
+      {
+        "width": 1440,
+        "mobile": false,
+        "time": 5819.799999999814
+      },
+      {
+        "width": 1440,
+        "mobile": false,
+        "time": 5820.600000000093
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "scrollWidth": 1920,
+    "source": "/videos/florins-hero-desktop.mp4",
+    "fit": "contain",
+    "broken": [],
+    "badTargets": [],
+    "requests": [
+      "http://127.0.0.1:3000/videos/florins-hero-desktop.mp4"
+    ],
+    "viewportEvents": [
+      {
+        "width": 1920,
+        "mobile": false,
+        "time": 36
+      }
+    ],
+    "captureRequests": [
+      "http://127.0.0.1:3000/videos/florins-hero-desktop.mp4"
+    ],
+    "captureViewportEvents": [
+      {
+        "width": 1920,
+        "mobile": false,
+        "time": 36
+      },
+      {
+        "width": 1920,
+        "mobile": false,
+        "time": 10857.599999999627
+      },
+      {
+        "width": 1920,
+        "mobile": false,
+        "time": 10858.299999999814
+      }
+    ],
+    "errors": []
+  }
+]

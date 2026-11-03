@@ -1,0 +1,483 @@
+{
+  "checkedAt": "2026-10-31T06:53:46.231Z",
+  "engine": "Edge/Chromium emulated viewports",
+  "reducedMotion": true,
+  "noJavaScript": true,
+  "results": [
+    {
+      "width": 375,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 80,
+        "width": 375,
+        "height": 720,
+        "bottom": 800,
+        "right": 375
+      },
+      "image": {
+        "x": 150.9375,
+        "y": 108,
+        "width": 298.125,
+        "height": 530,
+        "bottom": 638,
+        "right": 449.0625
+      },
+      "source": "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-mobile.png&w=640&q=75",
+      "naturalWidth": 299,
+      "naturalHeight": 533,
+      "fit": "contain",
+      "font": "\"Cormorant Garamond Variable\", Georgia, serif",
+      "headerPosition": "fixed",
+      "copy": [
+        {
+          "text": "FLORINS",
+          "x": 20,
+          "y": 140,
+          "width": 147.390625,
+          "height": 34,
+          "bottom": 174,
+          "right": 167.390625
+        },
+        {
+          "text": "Elegance inEvery Detail.",
+          "x": 20,
+          "y": 198,
+          "width": 147.390625,
+          "height": 74.875,
+          "bottom": 272.875,
+          "right": 167.390625
+        },
+        {
+          "text": "Discover exclusive fashion, bespoke designs, and timeless creations crafted for your most memorable moments.",
+          "x": 20,
+          "y": 296.875,
+          "width": 147.390625,
+          "height": 205.125,
+          "bottom": 502,
+          "right": 167.390625
+        }
+      ],
+      "actions": [
+        {
+          "href": "/collections",
+          "x": 20,
+          "y": 652,
+          "width": 335,
+          "height": 52,
+          "bottom": 704,
+          "right": 355
+        },
+        {
+          "href": "/appointments",
+          "x": 20,
+          "y": 716,
+          "width": 335,
+          "height": 52,
+          "bottom": 768,
+          "right": 355
+        }
+      ],
+      "requests": [
+        "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-mobile.png&w=640&q=75"
+      ],
+      "browserErrors": []
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 80,
+        "width": 430,
+        "height": 720,
+        "bottom": 800,
+        "right": 430
+      },
+      "image": {
+        "x": 194.9375,
+        "y": 108,
+        "width": 298.125,
+        "height": 530,
+        "bottom": 638,
+        "right": 493.0625
+      },
+      "source": "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-mobile.png&w=640&q=75",
+      "naturalWidth": 299,
+      "naturalHeight": 533,
+      "fit": "contain",
+      "font": "\"Cormorant Garamond Variable\", Georgia, serif",
+      "headerPosition": "fixed",
+      "copy": [
+        {
+          "text": "FLORINS",
+          "x": 20,
+          "y": 140,
+          "width": 171.59375,
+          "height": 34,
+          "bottom": 174,
+          "right": 191.59375
+        },
+        {
+          "text": "Elegance inEvery Detail.",
+          "x": 20,
+          "y": 198,
+          "width": 171.59375,
+          "height": 85.84375,
+          "bottom": 283.84375,
+          "right": 191.59375
+        },
+        {
+          "text": "Discover exclusive fashion, bespoke designs, and timeless creations crafted for your most memorable moments.",
+          "x": 20,
+          "y": 307.84375,
+          "width": 171.59375,
+          "height": 194.15625,
+          "bottom": 502,
+          "right": 191.59375
+        }
+      ],
+      "actions": [
+        {
+          "href": "/collections",
+          "x": 20,
+          "y": 652,
+          "width": 390,
+          "height": 52,
+          "bottom": 704,
+          "right": 410
+        },
+        {
+          "href": "/appointments",
+          "x": 20,
+          "y": 716,
+          "width": 390,
+          "height": 52,
+          "bottom": 768,
+          "right": 410
+        }
+      ],
+      "requests": [
+        "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-mobile.png&w=640&q=75"
+      ],
+      "browserErrors": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 80,
+        "width": 768,
+        "height": 1000,
+        "bottom": 1080,
+        "right": 768
+      },
+      "image": {
+        "x": -276.3125,
+        "y": 80,
+        "width": 1777.765625,
+        "height": 1000,
+        "bottom": 1080,
+        "right": 1501.453125
+      },
+      "source": "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75",
+      "naturalWidth": 1500,
+      "naturalHeight": 843,
+      "fit": "contain",
+      "font": "\"Cormorant Garamond Variable\", Georgia, serif",
+      "headerPosition": "fixed",
+      "copy": [
+        {
+          "text": "FLORINS",
+          "x": 30.71875,
+          "y": 359.9375,
+          "width": 322.546875,
+          "height": 40.796875,
+          "bottom": 400.734375,
+          "right": 353.265625
+        },
+        {
+          "text": "Elegance inEvery Detail.",
+          "x": 30.71875,
+          "y": 428.734375,
+          "width": 322.546875,
+          "height": 109.75,
+          "bottom": 538.484375,
+          "right": 353.265625
+        },
+        {
+          "text": "Discover exclusive fashion, bespoke designs, and timeless creations crafted for your most memorable moments.",
+          "x": 30.71875,
+          "y": 566.484375,
+          "width": 322.546875,
+          "height": 81.5625,
+          "bottom": 648.046875,
+          "right": 353.265625
+        }
+      ],
+      "actions": [
+        {
+          "href": "/collections",
+          "x": 30.71875,
+          "y": 684.046875,
+          "width": 222.953125,
+          "height": 52,
+          "bottom": 736.046875,
+          "right": 253.671875
+        },
+        {
+          "href": "/appointments",
+          "x": 30.71875,
+          "y": 748.046875,
+          "width": 224.828125,
+          "height": 52,
+          "bottom": 800.046875,
+          "right": 255.546875
+        }
+      ],
+      "requests": [
+        "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75"
+      ],
+      "browserErrors": []
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 80,
+        "width": 1024,
+        "height": 1000,
+        "bottom": 1080,
+        "right": 1024
+      },
+      "image": {
+        "x": -112.46875,
+        "y": 80,
+        "width": 1777.765625,
+        "height": 1000,
+        "bottom": 1080,
+        "right": 1665.296875
+      },
+      "source": "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75",
+      "naturalWidth": 1920,
+      "naturalHeight": 1080,
+      "fit": "contain",
+      "font": "\"Cormorant Garamond Variable\", Georgia, serif",
+      "headerPosition": "fixed",
+      "copy": [
+        {
+          "text": "FLORINS",
+          "x": 40.953125,
+          "y": 359.9375,
+          "width": 389.125,
+          "height": 40.796875,
+          "bottom": 400.734375,
+          "right": 430.078125
+        },
+        {
+          "text": "Elegance inEvery Detail.",
+          "x": 40.953125,
+          "y": 428.734375,
+          "width": 389.125,
+          "height": 109.75,
+          "bottom": 538.484375,
+          "right": 430.078125
+        },
+        {
+          "text": "Discover exclusive fashion, bespoke designs, and timeless creations crafted for your most memorable moments.",
+          "x": 40.953125,
+          "y": 566.484375,
+          "width": 331.828125,
+          "height": 81.5625,
+          "bottom": 648.046875,
+          "right": 372.78125
+        }
+      ],
+      "actions": [
+        {
+          "href": "/collections",
+          "x": 40.953125,
+          "y": 684.046875,
+          "width": 222.953125,
+          "height": 52,
+          "bottom": 736.046875,
+          "right": 263.90625
+        },
+        {
+          "href": "/appointments",
+          "x": 40.953125,
+          "y": 748.046875,
+          "width": 224.828125,
+          "height": 52,
+          "bottom": 800.046875,
+          "right": 265.78125
+        }
+      ],
+      "requests": [
+        "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75"
+      ],
+      "browserErrors": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 112,
+        "width": 1440,
+        "height": 968,
+        "bottom": 1080,
+        "right": 1440
+      },
+      "image": {
+        "x": 69.71875,
+        "y": 112,
+        "width": 1720.875,
+        "height": 968,
+        "bottom": 1080,
+        "right": 1790.59375
+      },
+      "source": "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75",
+      "naturalWidth": 1920,
+      "naturalHeight": 1080,
+      "fit": "contain",
+      "font": "\"Cormorant Garamond Variable\", Georgia, serif",
+      "headerPosition": "fixed",
+      "copy": [
+        {
+          "text": "FLORINS",
+          "x": 57.59375,
+          "y": 386.609375,
+          "width": 547.203125,
+          "height": 40.796875,
+          "bottom": 427.40625,
+          "right": 604.796875
+        },
+        {
+          "text": "Elegance inEvery Detail.",
+          "x": 57.59375,
+          "y": 455.40625,
+          "width": 547.203125,
+          "height": 152.40625,
+          "bottom": 607.8125,
+          "right": 604.796875
+        },
+        {
+          "text": "Discover exclusive fashion, bespoke designs, and timeless creations crafted for your most memorable moments.",
+          "x": 57.59375,
+          "y": 635.8125,
+          "width": 331.828125,
+          "height": 81.5625,
+          "bottom": 717.375,
+          "right": 389.421875
+        }
+      ],
+      "actions": [
+        {
+          "href": "/collections",
+          "x": 57.59375,
+          "y": 753.375,
+          "width": 222.953125,
+          "height": 52,
+          "bottom": 805.375,
+          "right": 280.546875
+        },
+        {
+          "href": "/appointments",
+          "x": 292.546875,
+          "y": 753.375,
+          "width": 224.828125,
+          "height": 52,
+          "bottom": 805.375,
+          "right": 517.375
+        }
+      ],
+      "requests": [
+        "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75",
+        "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75"
+      ],
+      "browserErrors": []
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 112,
+        "width": 1920,
+        "height": 968,
+        "bottom": 1080,
+        "right": 1920
+      },
+      "image": {
+        "x": 569.109375,
+        "y": 112,
+        "width": 1720.875,
+        "height": 968,
+        "bottom": 1080,
+        "right": 2289.984375
+      },
+      "source": "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75",
+      "naturalWidth": 1920,
+      "naturalHeight": 1080,
+      "fit": "contain",
+      "font": "\"Cormorant Garamond Variable\", Georgia, serif",
+      "headerPosition": "fixed",
+      "copy": [
+        {
+          "text": "FLORINS",
+          "x": 236.796875,
+          "y": 368.734375,
+          "width": 543.203125,
+          "height": 40.796875,
+          "bottom": 409.53125,
+          "right": 780
+        },
+        {
+          "text": "Elegance inEvery Detail.",
+          "x": 236.796875,
+          "y": 437.53125,
+          "width": 543.203125,
+          "height": 188.15625,
+          "bottom": 625.6875,
+          "right": 780
+        },
+        {
+          "text": "Discover exclusive fashion, bespoke designs, and timeless creations crafted for your most memorable moments.",
+          "x": 236.796875,
+          "y": 653.6875,
+          "width": 302.546875,
+          "height": 81.5625,
+          "bottom": 735.25,
+          "right": 539.34375
+        }
+      ],
+      "actions": [
+        {
+          "href": "/collections",
+          "x": 236.796875,
+          "y": 771.25,
+          "width": 222.953125,
+          "height": 52,
+          "bottom": 823.25,
+          "right": 459.75
+        },
+        {
+          "href": "/appointments",
+          "x": 471.75,
+          "y": 771.25,
+          "width": 224.828125,
+          "height": 52,
+          "bottom": 823.25,
+          "right": 696.578125
+        }
+      ],
+      "requests": [
+        "http://localhost:3001/_next/image?url=%2Fimages%2Fflorins-hero-desktop.png&w=1920&q=75"
+      ],
+      "browserErrors": []
+    }
+  ]
+}

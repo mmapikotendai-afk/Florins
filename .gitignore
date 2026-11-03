@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+coverage/
+.env*
+!.env.example
+src/generated/
+*.tsbuildinfo
+next-env.d.ts
+*.log
+.impeccable/config.local.json
+.local/

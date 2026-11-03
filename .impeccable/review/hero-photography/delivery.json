@@ -1,0 +1,14 @@
+[
+  {
+    "photo": "mobile",
+    "width": 640,
+    "contentType": "image/webp",
+    "bytes": 19794
+  },
+  {
+    "photo": "desktop",
+    "width": 1920,
+    "contentType": "image/webp",
+    "bytes": 21502
+  }
+]

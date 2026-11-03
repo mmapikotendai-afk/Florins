@@ -1,0 +1,110 @@
+﻿[
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 48,
+    "snippet": "font-size: 0.875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "0.875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 64,
+    "snippet": "font-size: 0.875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "0.875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 107,
+    "snippet": "font-size: 0.875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "0.875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 222,
+    "snippet": "font-size: clamp(3rem, 5.3vw, 5rem) has fluid endpoints 3rem and 5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "3rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 269,
+    "snippet": "font-size: clamp(2.5rem, 4vw, 4.5rem) has fluid endpoints 2.5rem and 4.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2.5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 280,
+    "snippet": "font-size: 0.875rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "0.875rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 491,
+    "snippet": "font-size: clamp(3.5rem, 12vw, 5rem) has fluid endpoint 5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "5rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 507,
+    "snippet": "font-size: clamp(1.75rem, 5vw, 2.5rem) has fluid endpoints 1.75rem and 2.5rem off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.75rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\catalogue.css",
+    "line": 562,
+    "snippet": "font-size: 1.5rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.5rem"
+  }
+]

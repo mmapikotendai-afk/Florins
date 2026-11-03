@@ -1,0 +1,127 @@
+{
+  "routes": [
+    {
+      "route": "bespoke",
+      "width": 320,
+      "scrollWidth": 320,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "bespoke",
+      "width": 375,
+      "scrollWidth": 375,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "bespoke",
+      "width": 430,
+      "scrollWidth": 430,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "bespoke",
+      "width": 768,
+      "scrollWidth": 768,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "bespoke",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "bespoke",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "bespoke",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "atelier",
+      "width": 320,
+      "scrollWidth": 320,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "atelier",
+      "width": 375,
+      "scrollWidth": 375,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "atelier",
+      "width": 430,
+      "scrollWidth": 430,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "atelier",
+      "width": 768,
+      "scrollWidth": 768,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "atelier",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "atelier",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    },
+    {
+      "route": "atelier",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "broken": [],
+      "badAnchors": [],
+      "errors": []
+    }
+  ],
+  "fieldValidation": true,
+  "dateValidation": true,
+  "restrictedLocalImages": true,
+  "referenceRemoval": true,
+  "readyDraft": true,
+  "editingInvalidatesDraft": true,
+  "noSubmission": true,
+  "noPersonalDataInUrls": true,
+  "noBrowserStorage": true,
+  "noScriptSafe": true,
+  "navigation": true
+}

@@ -1,0 +1,77 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "fixedHeader": true,
+      "separatePages": true,
+      "activeLinks": true,
+      "topOnNavigation": true,
+      "mobileClosure": true,
+      "overflow": false,
+      "browserErrors": []
+    },
+    {
+      "width": 375,
+      "fixedHeader": true,
+      "separatePages": true,
+      "activeLinks": true,
+      "topOnNavigation": true,
+      "mobileClosure": true,
+      "overflow": false,
+      "browserErrors": []
+    },
+    {
+      "width": 768,
+      "fixedHeader": true,
+      "separatePages": true,
+      "activeLinks": true,
+      "topOnNavigation": true,
+      "mobileClosure": true,
+      "overflow": false,
+      "browserErrors": []
+    },
+    {
+      "width": 1024,
+      "fixedHeader": true,
+      "separatePages": true,
+      "activeLinks": true,
+      "topOnNavigation": true,
+      "mobileClosure": true,
+      "overflow": false,
+      "browserErrors": []
+    },
+    {
+      "width": 1280,
+      "fixedHeader": true,
+      "separatePages": true,
+      "activeLinks": true,
+      "topOnNavigation": true,
+      "mobileClosure": true,
+      "overflow": false,
+      "browserErrors": []
+    },
+    {
+      "width": 1440,
+      "fixedHeader": true,
+      "separatePages": true,
+      "activeLinks": true,
+      "topOnNavigation": true,
+      "mobileClosure": true,
+      "overflow": false,
+      "browserErrors": []
+    },
+    {
+      "width": 1918,
+      "fixedHeader": true,
+      "separatePages": true,
+      "activeLinks": true,
+      "topOnNavigation": true,
+      "mobileClosure": true,
+      "overflow": false,
+      "browserErrors": []
+    }
+  ],
+  "nestedCollectionActive": true,
+  "appointmentActive": true,
+  "contextualDeepLinks": true
+}

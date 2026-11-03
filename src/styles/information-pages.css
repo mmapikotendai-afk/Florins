@@ -1,0 +1,101 @@
+/* About and Contact extend the established editorial world. */
+.information-page {
+  padding-bottom: var(--section-space);
+}
+.information-visit,
+.contact-introduction,
+.contact-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12%;
+}
+.information-visit {
+  border-top: 1px solid var(--line);
+}
+.information-visit > div {
+  max-width: 46ch;
+}
+.information-visit .text-link {
+  display: flex;
+  width: fit-content;
+  margin-top: 24px;
+}
+.contact-introduction {
+  align-items: end;
+  padding-block: 64px 80px;
+}
+.contact-introduction h1 {
+  font-size: var(--type-display);
+}
+.contact-introduction > p {
+  max-width: 38ch;
+  padding-bottom: 8px;
+}
+.contact-details {
+  padding-bottom: var(--section-space);
+}
+.contact-channels a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-block: 28px;
+  border-top: 1px solid var(--line);
+  font-size: 0.875rem;
+}
+.contact-channels a:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.contact-channels strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.contact-channels a:hover strong {
+  text-decoration: underline;
+}
+.contact-channels svg {
+  flex-shrink: 0;
+  transition: transform var(--duration-standard) var(--ease-editorial);
+}
+.contact-channels a:hover svg {
+  transform: translate(2px, -2px);
+}
+.contact-visit {
+  padding: 40px;
+  background: var(--surface);
+}
+.contact-visit h2 {
+  font-size: var(--type-subheading);
+}
+.contact-visit address {
+  font-style: normal;
+  margin-top: 24px;
+}
+.contact-visit p {
+  font-size: 0.875rem;
+  margin-top: 20px;
+  max-width: 38ch;
+}
+.contact-visit .text-link {
+  margin-top: 24px;
+}
+.information-visit .contact-demo-note {
+  margin-top: 40px;
+  font-size: 0.875rem;
+}
+@media (max-width: 767px) {
+  .information-visit,
+  .contact-introduction,
+  .contact-details {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .contact-introduction {
+    padding-block: 40px 48px;
+  }
+  .contact-visit {
+    padding: 28px;
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "routes": [
+    {
+      "route": "/collections",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/gowns",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/gowns",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/gowns/sculpted-evening-silhouette",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/gowns/sculpted-evening-silhouette",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/gowns/embellished-evening-silhouette",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/gowns/embellished-evening-silhouette",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/prom",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/prom",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/prom/embellished-evening-silhouette",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/prom/embellished-evening-silhouette",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/african-prints",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/african-prints",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/african-prints/pattern-and-movement",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/african-prints/pattern-and-movement",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/african-prints/a-study-in-stripes",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/african-prints/a-study-in-stripes",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/traditional-occasion-wear",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/traditional-occasion-wear",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/the-occasion-silhouette",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/the-occasion-silhouette",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/lace-and-ceremony",
+      "width": 375,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/lace-and-ceremony",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "errors": []
+    },
+    {
+      "route": "/collections",
+      "width": 320,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections",
+      "width": 430,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections",
+      "width": 768,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections",
+      "width": 1024,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections",
+      "width": 1920,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear",
+      "width": 320,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear",
+      "width": 430,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear",
+      "width": 768,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear",
+      "width": 1024,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear",
+      "width": 1920,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/the-occasion-silhouette",
+      "width": 320,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/the-occasion-silhouette",
+      "width": 430,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/the-occasion-silhouette",
+      "width": 768,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/the-occasion-silhouette",
+      "width": 1024,
+      "boundary": true,
+      "overflow": false
+    },
+    {
+      "route": "/collections/traditional-occasion-wear/the-occasion-silhouette",
+      "width": 1920,
+      "boundary": true,
+      "overflow": false
+    }
+  ],
+  "filter": true,
+  "reload": true,
+  "invalidFilter": true,
+  "gallery": true,
+  "zoom": true,
+  "focusRestoration": true,
+  "notFound": true,
+  "noJavaScriptFilter": true
+}

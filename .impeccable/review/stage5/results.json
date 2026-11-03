@@ -1,0 +1,66 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "overflow": false,
+      "browserErrors": [],
+      "flow": true,
+      "confirmation": true,
+      "private": true
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "browserErrors": [],
+      "flow": true,
+      "confirmation": true,
+      "private": true
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "browserErrors": [],
+      "flow": true,
+      "confirmation": true,
+      "private": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "browserErrors": [],
+      "flow": true,
+      "confirmation": true,
+      "private": true
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "browserErrors": [],
+      "flow": true,
+      "confirmation": true,
+      "private": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "browserErrors": [],
+      "flow": true,
+      "confirmation": true,
+      "private": true
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "browserErrors": [],
+      "flow": true,
+      "confirmation": true,
+      "private": true
+    }
+  ],
+  "pureGatewayTests": true,
+  "concurrentIdempotency": true,
+  "expiredSlot": true,
+  "serviceDependencyReset": true,
+  "noJavaScript": true,
+  "noProductionDatabase": true
+}

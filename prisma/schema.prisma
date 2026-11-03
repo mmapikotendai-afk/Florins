@@ -1,0 +1,262 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model MediaAsset {
+  id        String   @id @default(cuid())
+  path      String   @unique
+  altText   String
+  width     Int
+  height    Int
+  createdAt DateTime @default(now())
+}
+
+enum AdminRole {
+  OWNER
+  ADMIN
+}
+
+enum MakingStatus {
+  CUSTOM_MADE
+  READY_MADE
+  UNCONFIRMED
+}
+
+enum AppointmentStatus {
+  REQUESTED
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+  NO_SHOW
+}
+
+enum EnquiryStatus {
+  NEW
+  REVIEWING
+  CLOSED
+}
+
+enum NotificationStatus {
+  PENDING
+  SENT
+  FAILED
+}
+
+model AdminUser {
+  id         String    @id @default(uuid()) @db.Uuid
+  authUserId String    @unique @db.Uuid
+  role       AdminRole @default(ADMIN)
+  enabled    Boolean   @default(true)
+  createdAt  DateTime  @default(now()) @db.Timestamptz(3)
+  updatedAt  DateTime  @updatedAt @db.Timestamptz(3)
+}
+
+model Collection {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  name        String
+  description String
+  coverSrc    String
+  coverAlt    String
+  coverWidth  Int
+  coverHeight Int
+  sortOrder   Int       @default(0)
+  published   Boolean   @default(false)
+  sample      Boolean   @default(false)
+  products    Product[]
+  createdAt   DateTime  @default(now()) @db.Timestamptz(3)
+  updatedAt   DateTime  @updatedAt @db.Timestamptz(3)
+
+  @@index([published, sortOrder])
+}
+
+model Product {
+  id          String         @id @default(cuid())
+  slug        String         @unique
+  name        String
+  description String
+  sizes       String[]       @default([])
+  fabric      String?
+  amountMinor Int?
+  currency    String?        @db.VarChar(3)
+  making      MakingStatus   @default(UNCONFIRMED)
+  published   Boolean        @default(false)
+  sample      Boolean        @default(false)
+  collections Collection[]
+  images      ProductImage[]
+  createdAt   DateTime       @default(now()) @db.Timestamptz(3)
+  updatedAt   DateTime       @updatedAt @db.Timestamptz(3)
+
+  @@index([published, createdAt])
+}
+
+model ProductImage {
+  id        String   @id @default(cuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  src       String
+  alt       String
+  width     Int
+  height    Int
+  position  Int
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+
+  @@unique([productId, position])
+}
+
+model Customer {
+  id            String           @id @default(uuid()) @db.Uuid
+  fullName      String
+  email         String
+  phone         String
+  appointments  Appointment[]
+  enquiries     BespokeEnquiry[]
+  notifications Notification[]
+  createdAt     DateTime         @default(now()) @db.Timestamptz(3)
+  updatedAt     DateTime         @updatedAt @db.Timestamptz(3)
+
+  @@index([email])
+  @@index([createdAt])
+}
+
+model AppointmentService {
+  id              String        @id @default(cuid())
+  name            String
+  description     String
+  durationMinutes Int
+  intervalMinutes Int           @default(30)
+  enabled         Boolean       @default(false)
+  sample          Boolean       @default(false)
+  staff           Staff[]
+  appointments    Appointment[]
+  createdAt       DateTime      @default(now()) @db.Timestamptz(3)
+  updatedAt       DateTime      @updatedAt @db.Timestamptz(3)
+
+  @@index([enabled, sample])
+}
+
+model Staff {
+  id           String               @id @default(uuid()) @db.Uuid
+  name         String
+  enabled      Boolean              @default(false)
+  sample       Boolean              @default(false)
+  services     AppointmentService[]
+  availability StaffAvailability[]
+  blockedDates BlockedDate[]
+  appointments Appointment[]
+  createdAt    DateTime             @default(now()) @db.Timestamptz(3)
+  updatedAt    DateTime             @updatedAt @db.Timestamptz(3)
+}
+
+// Harare wall-clock minutes, weekday 0=Sunday. No overnight interval: split across days.
+model StaffAvailability {
+  id          String   @id @default(uuid()) @db.Uuid
+  staffId     String   @db.Uuid
+  staff       Staff    @relation(fields: [staffId], references: [id], onDelete: Cascade)
+  weekday     Int
+  startMinute Int
+  endMinute   Int
+  createdAt   DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt   DateTime @updatedAt @db.Timestamptz(3)
+
+  @@unique([staffId, weekday, startMinute])
+}
+
+// UTC interval; null staff blocks the entire studio. [start, end) boundaries.
+model BlockedDate {
+  id        String   @id @default(uuid()) @db.Uuid
+  staffId   String?  @db.Uuid
+  staff     Staff?   @relation(fields: [staffId], references: [id], onDelete: Cascade)
+  startsAt  DateTime @db.Timestamptz(3)
+  endsAt    DateTime @db.Timestamptz(3)
+  reason    String?
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+
+  @@index([staffId, startsAt, endsAt])
+}
+
+model Appointment {
+  id                  String             @id @default(uuid()) @db.Uuid
+  reference           String             @unique
+  customerId          String             @db.Uuid
+  customer            Customer           @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  serviceId           String
+  service             AppointmentService @relation(fields: [serviceId], references: [id], onDelete: Restrict)
+  serviceName         String
+  staffId             String             @db.Uuid
+  staff               Staff              @relation(fields: [staffId], references: [id], onDelete: Restrict)
+  startsAt            DateTime           @db.Timestamptz(3)
+  endsAt              DateTime           @db.Timestamptz(3)
+  durationMinutes     Int
+  status              AppointmentStatus  @default(REQUESTED)
+  eventDate           DateTime?          @db.Date
+  notes               String?
+  managementTokenHash String
+  idempotencyKeyHash  String             @unique
+  requestHash         String
+  version             Int                @default(1)
+  cancelledAt         DateTime?          @db.Timestamptz(3)
+  notifications       Notification[]
+  createdAt           DateTime           @default(now()) @db.Timestamptz(3)
+  updatedAt           DateTime           @updatedAt @db.Timestamptz(3)
+
+  @@index([staffId, status, startsAt, endsAt])
+  @@index([customerId, createdAt])
+  @@index([status, startsAt])
+}
+
+model BespokeEnquiry {
+  id                 String         @id @default(uuid()) @db.Uuid
+  reference          String         @unique
+  customerId         String         @db.Uuid
+  customer           Customer       @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  occasion           String
+  preferredDate      DateTime?      @db.Date
+  eventDate          DateTime?      @db.Date
+  description        String
+  notes              String?
+  status             EnquiryStatus  @default(NEW)
+  idempotencyKeyHash String         @unique
+  requestHash        String
+  notifications      Notification[]
+  createdAt          DateTime       @default(now()) @db.Timestamptz(3)
+  updatedAt          DateTime       @updatedAt @db.Timestamptz(3)
+
+  @@index([status, createdAt])
+  @@index([customerId])
+}
+
+// Durable outbox only. External delivery needs a separately configured worker/provider.
+model Notification {
+  id            String             @id @default(uuid()) @db.Uuid
+  customerId    String             @db.Uuid
+  customer      Customer           @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  appointmentId String?            @db.Uuid
+  appointment   Appointment?       @relation(fields: [appointmentId], references: [id], onDelete: Restrict)
+  enquiryId     String?            @db.Uuid
+  enquiry       BespokeEnquiry?    @relation(fields: [enquiryId], references: [id], onDelete: Restrict)
+  kind          String
+  dedupeKey     String             @unique
+  status        NotificationStatus @default(PENDING)
+  attempts      Int                @default(0)
+  sentAt        DateTime?          @db.Timestamptz(3)
+  createdAt     DateTime           @default(now()) @db.Timestamptz(3)
+  updatedAt     DateTime           @updatedAt @db.Timestamptz(3)
+
+  @@index([status, createdAt])
+}
+
+model RateLimitBucket {
+  key       String   @id
+  count     Int
+  expiresAt DateTime @db.Timestamptz(3)
+
+  @@index([expiresAt])
+}

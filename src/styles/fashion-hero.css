@@ -1,0 +1,183 @@
+/* Supplied photography, original colour. The grey canvas matches its backdrop. */
+.fashion-hero {
+  --hero-height: clamp(680px, calc(100svh - var(--header-height)), 1040px);
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  min-height: var(--hero-height);
+  background: #d5d5d5;
+  color: var(--ink);
+}
+.fashion-hero-photograph {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.fashion-hero-image {
+  position: absolute;
+  top: 0;
+  left: calc(73% - var(--hero-height) * 0.86);
+  width: calc(var(--hero-height) * 16 / 9);
+  height: var(--hero-height);
+  max-width: none;
+  object-fit: contain;
+  object-position: center;
+  clip-path: inset(1px);
+  animation: fashion-photograph-enter 1100ms var(--ease-editorial) both;
+}
+.fashion-hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: var(--hero-height);
+  width: min(42%, 620px);
+  padding: 64px 0 64px var(--gutter);
+}
+.fashion-hero-brand {
+  margin-bottom: 28px;
+  font-family: var(--font-editorial);
+  font-size: 1.5rem;
+  letter-spacing: 0.16em;
+}
+.fashion-hero h1 {
+  font-size: clamp(3.5rem, 5.4vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  text-wrap: nowrap;
+}
+.fashion-hero-description {
+  max-width: 34ch;
+  margin-top: 28px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.fashion-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 36px;
+}
+.fashion-hero-actions [data-slot="button"] {
+  min-height: 52px;
+  padding-inline: 24px;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition:
+    background-color 220ms,
+    color 220ms;
+}
+.fashion-hero-actions [data-slot="button"].bg-background {
+  background: transparent;
+}
+.fashion-hero-actions [data-slot="button"]:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+.fashion-hero-content > * {
+  animation: fashion-type-enter 800ms var(--ease-editorial) both;
+}
+.fashion-hero-content > :nth-child(2) {
+  animation-delay: 90ms;
+}
+.fashion-hero-content > :nth-child(3) {
+  animation-delay: 170ms;
+}
+.fashion-hero-content > :nth-child(4) {
+  animation-delay: 240ms;
+}
+@keyframes fashion-photograph-enter {
+  from {
+    opacity: 0.65;
+    clip-path: inset(0 0 3% 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(1px);
+  }
+}
+@keyframes fashion-type-enter {
+  from {
+    opacity: 0.6;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 1600px) {
+  .fashion-hero-content {
+    margin-left: max(0px, calc((100vw - 1600px) / 2));
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fashion-hero-content {
+    width: 46%;
+  }
+  .fashion-hero h1 {
+    font-size: 3.5rem;
+  }
+  .fashion-hero-image {
+    left: calc(76% - var(--hero-height) * 0.86);
+  }
+}
+@media (max-width: 767px) {
+  .fashion-hero {
+    --hero-height: 720px;
+    --hero-photo-height: 530px;
+  }
+  .fashion-hero-image {
+    top: 28px;
+    left: calc(80% - var(--hero-photo-height) * 0.28125);
+    width: calc(var(--hero-photo-height) * 9 / 16);
+    height: var(--hero-photo-height);
+  }
+  .fashion-hero-content {
+    display: grid;
+    grid-template-columns: 44% 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    align-content: start;
+    justify-content: start;
+    width: 100%;
+    min-height: var(--hero-height);
+    padding: 60px var(--gutter) 32px;
+  }
+  .fashion-hero-brand {
+    grid-column: 1;
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+  }
+  .fashion-hero h1 {
+    grid-column: 1;
+    font-size: clamp(2.25rem, 9.6vw, 2.75rem);
+    line-height: 1.04;
+  }
+  .fashion-hero-description {
+    grid-column: 1;
+    margin-top: 24px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .fashion-hero-actions {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+  }
+  .fashion-hero-actions [data-slot="button"] {
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fashion-hero-image,
+  .fashion-hero-content > * {
+    animation: none;
+  }
+  .fashion-hero-actions [data-slot="button"] {
+    transition: none;
+  }
+}

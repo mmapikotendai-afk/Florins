@@ -1,0 +1,13 @@
+# Bespoke enquiry builder
+
+Stage 4 is a frontend enquiry-preparation flow, not an email service, database write, file-upload service or appointment booking. The user confirmed +263 771 640 916 (local 0771640916) for WhatsApp and calls. The draft handoff uses https://wa.me/263771640916 without any personal text in the URL. The form explicitly says nothing is submitted; it produces a reviewable text draft that visitors may copy and send themselves. No visitor-entered contact details are put in URLs, storage, analytics or application network requests.
+
+React Hook Form uses the shared Zod schema in `src/lib/validations/bespoke.ts`. Contact details, occasion and a 20–3,000-character description are required; dates, reference photographs and additional notes are optional. Calendar dates must be valid, must not be in the past in the studio's Harare timezone, and a preferred consultation date cannot follow a supplied event date. These are date-consistency checks, not an availability calendar or promises about studio lead times. The studio-day subscription refreshes on focus and through a minute timer; preparation also revalidates the current day.
+
+Optional references are browser-local previews: at most three JPEG, PNG or WebP images, 5 MiB each, up to 20 megapixels and 8,192 pixels per edge. MIME type and file signature must agree, and the file must decode as an image. Files are never uploaded; only filenames enter the text draft. Bitmap handles are closed and object URLs are revoked on removal/unmount. Visitors are told to share originals separately in their conversation. SVG and other file types are rejected.
+
+Preparing a draft focuses its heading. Editing the form or changing references invalidates the old draft. Clipboard failure selects the draft for manual copying and gives recovery guidance. Without JavaScript, the preparation button stays disabled and a noscript contact alternative is visible; implicit submission must not expose details in query strings.
+
+Before adding real delivery in a later authorized stage, configure a verified recipient/service, explicitly change the user-facing delivery language and validate again on the server. A future upload implementation needs a separately bounded, authenticated/storage-reviewed design; this builder deliberately has no upload endpoint.
+
+Studio gallery entries live in `src/lib/config/studio-gallery.ts`. Replace `photo: null` only with approved photographs of the real studio, meaningful alt text and actual dimensions. Current garment photographs are captioned as garment work, never described as studio interiors. The seven process stages are proposed, with no invented timeline or fitting count.

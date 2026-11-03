@@ -1,0 +1,38 @@
+﻿[
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\booking.css",
+    "line": 98,
+    "snippet": "font-size: 1.75rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.75rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\booking.css",
+    "line": 487,
+    "snippet": "font-size: 1.25rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "1.25rem"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\T490\\Documents\\Florins\\src\\styles\\booking.css",
+    "line": 548,
+    "snippet": "font-size: 2rem is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "2rem"
+  }
+]
