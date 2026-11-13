@@ -115,7 +115,7 @@
 
 /* Stage 2: editorial fashion homepage. */
 html {
-  --header-height: 112px;
+  --header-height: 88px;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 24px);
 }
@@ -127,8 +127,17 @@ html {
   top: 0;
   inset-inline: 0;
   z-index: 40;
+  color: var(--ink);
   background: var(--paper);
   border-bottom: 1px solid var(--line);
+  transition:
+    background-color var(--duration-standard) var(--ease-editorial),
+    border-color var(--duration-standard) var(--ease-editorial);
+}
+.site-header--overlay {
+  background: transparent;
+  border-bottom-color: transparent;
+  color: var(--paper);
 }
 .site-content {
   padding-top: var(--header-height);
@@ -151,8 +160,8 @@ html {
   flex-shrink: 0;
 }
 .brand img {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
 }
 .brand span {
@@ -162,7 +171,7 @@ html {
 }
 .desktop-nav {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 100px minmax(0, 1fr);
   width: 100%;
   gap: 24px;
   align-items: center;
@@ -170,72 +179,57 @@ html {
 .nav-group {
   display: flex;
   align-items: center;
-  gap: clamp(20px, 2vw, 36px);
+  justify-content: flex-end;
+  gap: clamp(12px, 1.2vw, 20px);
 }
 .nav-group-right {
   grid-column: 3;
-  justify-content: flex-end;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 14px;
 }
 .desktop-nav a:not(.appointment-nav) {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 48px;
-  font-size: 0.75rem;
+  font-family: var(--font-editorial);
+  font-weight: 500;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   white-space: nowrap;
 }
 .desktop-nav a:not(.appointment-nav)::after {
   content: "";
   position: absolute;
-  bottom: 8px;
+  bottom: 10px;
   left: 0;
   right: 0;
   height: 1px;
   background: currentColor;
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: center;
   transition: transform var(--duration-standard) var(--ease-editorial);
 }
 .desktop-nav a:hover::after,
 .desktop-nav a[aria-current]::after {
   transform: scaleX(1);
 }
-.appointment-nav {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  min-height: 48px;
-  padding: 12px 18px;
-  color: white;
-  background: black;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.045em;
-  transition: background var(--duration-fast);
-  white-space: nowrap;
-}
-.appointment-nav:hover {
-  background: var(--charcoal);
-}
-.appointment-nav[aria-current="page"] {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-.mobile-appointment {
-  display: none;
-}
 .menu-toggle {
   display: none;
-  width: 48px;
-  height: 48px;
+  min-height: 44px;
+  padding-inline: 8px;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--ink);
-  background: var(--paper);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  cursor: pointer;
 }
 .mobile-menu {
   position: fixed;
@@ -300,6 +294,36 @@ em {
 .intro-copy {
   max-width: 42ch;
   padding-top: 8px;
+}
+.founder-section {
+  padding-block: clamp(3rem, 6vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+.founder-grid {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 80px);
+  align-items: center;
+}
+.founder-image {
+  position: relative;
+  max-width: 340px;
+  overflow: hidden;
+  background: var(--surface);
+}
+@media (max-width: 767px) {
+  .founder-image {
+    max-width: 100%;
+  }
+}
+.founder-grid h2 {
+  font-size: var(--type-subheading);
+  margin-bottom: 24px;
+}
+.founder-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .intro-copy p + p {
   margin-top: 20px;
@@ -531,7 +555,7 @@ em {
 
 @media (max-width: 1279px) {
   html {
-    --header-height: 80px;
+    --header-height: 72px;
   }
   .header-inner {
     gap: 16px;
@@ -545,10 +569,6 @@ em {
   }
   .menu-toggle {
     display: flex;
-  }
-  .mobile-appointment {
-    display: block;
-    margin-left: auto;
   }
   .footer-main {
     grid-template-columns: 1fr 1fr;
@@ -569,21 +589,11 @@ em {
   .brand span {
     font-size: 1.375rem;
   }
-  .appointment-nav {
-    font-size: 0.6875rem;
-    padding-inline: 10px;
-    min-height: 44px;
-    gap: 6px;
-  }
-  .appointment-nav svg {
-    display: none;
-  }
   .menu-toggle {
-    width: 44px;
-    height: 44px;
     flex-shrink: 0;
   }
   .introduction,
+  .founder-grid,
   .bespoke-inner,
   .atelier {
     grid-template-columns: 1fr;
@@ -654,9 +664,6 @@ em {
   }
   .header-inner {
     gap: 8px;
-  }
-  .appointment-nav {
-    font-size: 0.6875rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {

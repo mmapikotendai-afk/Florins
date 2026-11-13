@@ -6,6 +6,7 @@ import {
   CataloguePhotoFrame,
 } from "@/components/catalogue/shared";
 import { Button } from "@/components/ui/button";
+import { FounderSection } from "@/components/founder-section";
 import { photos } from "@/lib/catalogue/fixtures";
 
 export const metadata: Metadata = {
@@ -49,54 +50,8 @@ export default function AboutPage() {
             </figcaption>
           </figure>
         </section>
-        <section
-          className="editorial-introduction section-space"
-          aria-labelledby="about-expression"
-        >
-          <h2 id="about-expression">
-            Your occasion.
-            <br />
-            <em>Your point of view.</em>
-          </h2>
-          <div>
-            <p>
-              What you wear can be a personal expression of the moment. Explore
-              silhouettes, pattern and detail, then bring your own ideas to
-              Florins.
-            </p>
-            <p>
-              For a custom outfit, begin with a conversation about your occasion
-              and the design you have in mind. Fabric, measurements and fitting
-              arrangements are discussed directly with the studio.
-            </p>
-            <Link className="text-link" href="/bespoke">
-              Discover bespoke <ArrowUpRight size={16} aria-hidden="true" />
-            </Link>
-          </div>
-        </section>
-        <section
-          className="information-visit section-space"
-          aria-labelledby="about-visit"
-        >
-          <h2 id="about-visit">
-            Meet us
-            <br />
-            <em>in the atelier.</em>
-          </h2>
-          <div>
-            <p>
-              Florins is based in Milton Park, Harare, Zimbabwe. Visits are by
-              appointment, allowing you to discuss your ideas in person.
-            </p>
-            <Link className="text-link" href="/atelier">
-              Explore the atelier <ArrowUpRight size={16} aria-hidden="true" />
-            </Link>
-            <Link className="text-link" href="/contact">
-              Get in touch <ArrowUpRight size={16} aria-hidden="true" />
-            </Link>
-          </div>
-        </section>
       </div>
+      <FounderSection />
     </main>
   );
 }

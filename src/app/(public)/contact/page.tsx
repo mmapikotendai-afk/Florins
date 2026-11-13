@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { EnquiryForm } from "@/components/bespoke/enquiry-form";
 import { Breadcrumbs } from "@/components/catalogue/shared";
 import { site } from "@/lib/config/site";
 
@@ -80,9 +81,9 @@ export default function ContactPage() {
               Use the bespoke enquiry builder to prepare your design details,
               then share the draft with Florins on WhatsApp.
             </p>
-            <Link href="/bespoke#enquiry" className="text-link">
+            <Link href="#enquiry" className="text-link">
               Prepare a bespoke enquiry{" "}
-              <ArrowUpRight size={16} aria-hidden="true" />
+              <ArrowDown size={16} aria-hidden="true" />
             </Link>
             <p className="contact-demo-note">
               You can also explore the appointment booking demonstration. It
@@ -95,6 +96,31 @@ export default function ContactPage() {
           </div>
         </section>
       </div>
+      <section
+        id="enquiry"
+        className="enquiry-section container-editorial section-space"
+        aria-labelledby="enquiry-title"
+      >
+        <div className="enquiry-introduction">
+          <h2 id="enquiry-title">
+            Tell us what
+            <br />
+            <em>you imagine.</em>
+          </h2>
+          <p>
+            Prepare the details of your occasion and the design you have in
+            mind, then begin a conversation with the studio.
+          </p>
+          <p>
+            Preferred dates are requests, not confirmed appointments. Visits to
+            the Milton Park studio are by appointment only.
+          </p>
+          <p className="field-help">
+            Fields marked optional can be left blank.
+          </p>
+        </div>
+        <EnquiryForm />
+      </section>
     </main>
   );
 }

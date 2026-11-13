@@ -517,3 +517,211 @@
     max-width: 100%;
   }
 }
+
+/* Image-only gallery: masonry columns with an enlarging lightbox. */
+.gallery-page {
+  padding: 20px 20px 64px;
+}
+.masonry-gallery {
+  columns: 1;
+  column-gap: 20px;
+}
+.masonry-gallery li {
+  margin-bottom: 20px;
+  break-inside: avoid;
+}
+.masonry-gallery button {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: var(--surface);
+  cursor: zoom-in;
+}
+.masonry-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 600ms var(--ease-editorial);
+}
+.masonry-gallery button:hover img {
+  transform: scale(1.1);
+}
+.lightbox {
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 24px 72px 56px;
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+.lightbox[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.lightbox button {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+.lightbox-close {
+  top: 12px;
+  right: 12px;
+}
+.lightbox-previous,
+.lightbox-next {
+  top: calc(50% - 24px);
+}
+.lightbox-previous {
+  left: 12px;
+}
+.lightbox-next {
+  right: 12px;
+}
+.lightbox p {
+  position: absolute;
+  bottom: 16px;
+  inset-inline: 0;
+  text-align: center;
+  font-size: 0.8125rem;
+}
+@media (min-width: 560px) {
+  .masonry-gallery {
+    columns: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .masonry-gallery {
+    columns: 3;
+  }
+}
+@media (min-width: 1440px) {
+  .masonry-gallery {
+    columns: 4;
+  }
+}
+@media (max-width: 767px) {
+  .lightbox {
+    padding: 64px 12px 56px;
+  }
+  .lightbox-previous,
+  .lightbox-next {
+    top: auto;
+    bottom: 4px;
+  }
+}
+
+/* Workshops page styles */
+.workshops-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.workshops-tagline {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 1.125rem;
+  color: var(--ink);
+  margin-top: 20px;
+}
+.workshops-pillars {
+  border-top: 1px solid var(--line);
+}
+.workshops-pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+.workshops-pillar-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.workshops-pillar-card .pillar-copy {
+  display: flex;
+  flex-direction: column;
+}
+.pillar-number {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.workshops-pillar-card h3 {
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  line-height: 1.1;
+}
+.pillar-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 8px;
+  color: var(--charcoal);
+}
+.pillar-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-top: 14px;
+  max-width: 44ch;
+}
+.workshops-cta {
+  border-top: 1px solid var(--line);
+  background: var(--ink);
+  color: var(--paper);
+  margin-inline: calc(-1 * var(--gutter));
+  padding-inline: var(--gutter);
+  text-align: center;
+}
+.workshops-cta-inner {
+  max-width: 680px;
+  margin-inline: auto;
+  padding-block: 32px;
+}
+.workshops-cta h2 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  line-height: 1;
+  color: var(--paper);
+}
+.workshops-cta p {
+  margin: 24px auto 36px;
+  max-width: 48ch;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+}
+.workshops-cta [data-slot="button"] {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+.workshops-cta [data-slot="button"]:hover {
+  background: transparent;
+  color: var(--paper);
+}
+@media (min-width: 768px) {
+  .workshops-pillar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}

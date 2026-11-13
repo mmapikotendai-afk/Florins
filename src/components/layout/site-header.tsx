@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ArrowUpRight, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { isCurrentPage, mainNavigation } from "@/lib/config/navigation";
 
@@ -10,6 +9,8 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [openPath, setOpenPath] = useState<string | null>(null);
   const open = openPath === pathname;
+  const overHero = pathname === "/";
+  const [scrolled, setScrolled] = useState(false);
   const toggle = useRef<HTMLButtonElement>(null);
   const panel = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -52,20 +53,17 @@ export function SiteHeader() {
       document.removeEventListener("keydown", keys);
     };
   }, [open]);
+  useEffect(() => {
+    if (!overHero) return;
+    const onScroll = () => setScrolled(window.scrollY >= 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [overHero]);
   function navigate() {
     setOpenPath(null);
     window.scrollTo({ top: 0, behavior: "instant" });
   }
-  const appointment = (
-    <Link
-      className="appointment-nav"
-      href="/appointments"
-      onNavigate={navigate}
-      aria-current={pathname === "/appointments" ? "page" : undefined}
-    >
-      Book appointment <ArrowUpRight size={15} aria-hidden="true" />
-    </Link>
-  );
   function navigationLink(item: (typeof mainNavigation)[number]) {
     return (
       <Link
@@ -79,7 +77,9 @@ export function SiteHeader() {
     );
   }
   return (
-    <header className="site-header">
+    <header
+      className={`site-header${overHero && !scrolled ? " site-header--overlay" : ""}`}
+    >
       <div className="header-inner container-editorial">
         <Link
           className="brand"
@@ -89,12 +89,11 @@ export function SiteHeader() {
         >
           <Image
             src="/images/florins-logo.jpeg"
-            alt=""
-            width={48}
-            height={48}
+            alt="FLORINS"
+            width={44}
+            height={44}
             priority
           />
-          <span>FLORINS</span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
           <div className="nav-group">
@@ -102,10 +101,8 @@ export function SiteHeader() {
           </div>
           <div className="nav-group nav-group-right">
             {mainNavigation.slice(3).map(navigationLink)}
-            {appointment}
           </div>
         </nav>
-        <div className="mobile-appointment">{appointment}</div>
         <button
           ref={toggle}
           className="menu-toggle"
@@ -114,20 +111,13 @@ export function SiteHeader() {
           aria-controls="mobile-menu"
           onClick={() => setOpenPath(open ? null : pathname)}
         >
-          {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+          {open ? "Close" : "Menu"}
         </button>
       </div>
       {open && (
         <div id="mobile-menu" ref={panel} className="mobile-menu">
           <nav aria-label="Mobile navigation">
             {mainNavigation.map(navigationLink)}
-            <Link
-              href="/appointments"
-              onNavigate={navigate}
-              aria-current={pathname === "/appointments" ? "page" : undefined}
-            >
-              Book appointment <ArrowUpRight aria-hidden="true" />
-            </Link>
           </nav>
           <p>
             Milton Park, Harare

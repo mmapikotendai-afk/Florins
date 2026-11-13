@@ -139,8 +139,8 @@ export default function AtelierPage() {
               alterations and what to bring should be agreed directly with
               Florins.
             </p>
-            <Link href="/bespoke#measurements" className="text-link">
-              Measurements &amp; fittings{" "}
+            <Link href="/contact#enquiry" className="text-link">
+              Begin an enquiry{" "}
               <ArrowUpRight size={16} aria-hidden="true" />
             </Link>
           </div>

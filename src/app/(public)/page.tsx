@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FashionHero } from "@/components/fashion-hero";
+import { FounderSection } from "@/components/founder-section";
 import { FashionImage } from "@/components/fashion-image";
 import { site } from "@/lib/config/site";
 import { catalogue } from "@/lib/catalogue/repository";
@@ -12,30 +13,7 @@ export default async function Home() {
   return (
     <main id="main-content">
       <FashionHero />
-      <section
-        id="about"
-        className="introduction container-editorial section-space"
-        aria-labelledby="intro-heading"
-      >
-        <h2 id="intro-heading">
-          A distinctive point of view.
-          <br />
-          <em>A personal expression.</em>
-        </h2>
-        <div className="intro-copy">
-          <p>
-            From gowns to African prints, FLORINS brings a considered approach
-            to dressing for your occasion.
-          </p>
-          <p>
-            Discover bespoke clothing and special-occasion fashion from our
-            appointment-only studio in Milton Park, Harare.
-          </p>
-          <Link href="/atelier" className="text-link">
-            Inside the atelier <ArrowUpRight size={16} aria-hidden="true" />
-          </Link>
-        </div>
-      </section>
+      <FounderSection id="about" />
       <section
         id="collections"
         className="collections container-editorial section-space"
